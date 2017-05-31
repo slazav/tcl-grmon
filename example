@@ -9,8 +9,8 @@ source modules/module_cpu_load.tcl
 source modules/module_cpu_temp.tcl
 
 # local connection to the database, current folder
-Device db_local
-graphene::monitor mon db_local
+Device db
+graphene::monitor mon db
 mon configure -verb 1
 
 mon add_module [cpu_temp #auto]
